@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Eric Sherouse",
+      "authorEmail": "sherousee@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
