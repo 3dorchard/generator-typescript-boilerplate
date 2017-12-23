@@ -1,5 +1,6 @@
 # generator-typescript-boilerplate [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Boilerplate to create an npm module using typescript
+> Note: as of 12/22/17 I am actively developing this. I've not tested at all. All feedback is welcome.
 
 ## Installation
 
