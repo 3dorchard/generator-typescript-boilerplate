@@ -1,4 +1,4 @@
-# <% if (scope) { %>@<%= scope%>/<% } %><%= name%>[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# <% if (scope) { %>@<%= scope%>/<% } %><%= name%>
 > <%= description%>
 
 ## Installation
