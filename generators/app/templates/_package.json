@@ -1,5 +1,5 @@
 {
-  "name": "<%= name%>",
+  "name": "<% if (scope) { %>@<%= scope%>/<% } %><%= name%>",
   "version": "0.0.0",
   "description": "<%= description%>",
   "main": "dist/index.js",

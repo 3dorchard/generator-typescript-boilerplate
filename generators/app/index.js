@@ -20,7 +20,11 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'description',
       message: 'Your project description',
-      //Defaults to the project's folder name if the input is skipped
+      default: ''
+    }, {
+      type: 'input',
+      name: 'scope',
+      message: 'Scope (leave blank for public scope)',
       default: ''
     }];
 
@@ -36,6 +40,7 @@ module.exports = class extends Generator {
       this.templatePath('_package.json'),
       this.destinationPath('package.json'), {
         name: this.props.name,
+        scope: this.props.scope || false,
         description: this.props.description
       }
     );
@@ -57,6 +62,14 @@ module.exports = class extends Generator {
       this.templatePath('_thing.ts'),
       this.destinationPath('src/' + name + '.ts'), {
         name: name
+      }
+    );
+    this.fs.copyTpl(
+      this.templatePath('_README.md'),
+      this.destinationPath('README.md'), {
+        name: this.props.name,
+        scope: this.props.scope || false,
+        description: this.props.description
       }
     );
     this.fs.copyTpl(
