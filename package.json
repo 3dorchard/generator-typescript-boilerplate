@@ -1,6 +1,6 @@
 {
   "name": "generator-typescript-boilerplate",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Boilerplate to create an npm module using typescript",
   "homepage": "",
   "author": {
